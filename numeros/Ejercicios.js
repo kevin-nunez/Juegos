@@ -234,8 +234,28 @@ alert ("FELICITACIONES!! El numero pensado era " +num2+ "\n lo resolviste en "+c
 */ 
 
 //   Juego 2
-function aleatoria(){
+let jugador 
+let pc
+
+function aleatoria(pc){
   return Math.ceil(Math.random()*3)
+}
+
+jugador = prompt("Elije 1: Piedra, 2: Papel, 3: Tijera")
+pc = aleatoria()
+alert("Tu elección fue:" +eleccion(jugada))
+alert("Pc eligió: "+ eleccion(pc))
+
+if (jugador==pc){
+    alert("EMPATE")
+}else if (jugador==1 && pc==3){
+    alert("GANASTE")
+}else if (jugador==2 && pc==1){
+    alert("GANASTE")
+}else if (jugador==3 && pc==2){
+    alert("GANASTE")
+}else{
+    alert("PERDISTE")
 }
 
 function eleccion(jugada){
