@@ -237,7 +237,7 @@ alert ("FELICITACIONES!! El numero pensado era " +num2+ "\n lo resolviste en "+c
 let jugador 
 let pc
 
-function aleatoria(pc){
+function aleatoria(){
   return Math.ceil(Math.random()*3)
 }
 
