@@ -213,7 +213,7 @@ console.log("El mes de", mesEjemplo, "corresponde a la estación:", estacion);
 */
 
 
-// Juego 1
+/* Juego 1
 
 let num1
 let num2
@@ -231,3 +231,26 @@ while(num1 != num2){
   contador++
 }
 alert ("FELICITACIONES!! El numero pensado era " +num2+ "\n lo resolviste en "+contador+ " intentos")
+*/ 
+
+//   Juego 2
+function aleatoria(){
+  return Math.ceil(Math.random()*3)
+}
+
+function eleccion(jugada){
+  let resultado = ""
+  if (jugada == 1){
+    resultado = "PIEDRA"
+  }else if (jugada == 2){
+    resultado = "PAPEL" 
+  }else if (jugada == 3){
+    resultado = "TIJERA"
+  }else{
+    resultado = "INGRESASTE UN VALOR/PALABRA INCORRECTA"
+  } 
+  return resultado
+
+ 
+  
+}
